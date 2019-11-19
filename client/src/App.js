@@ -4,8 +4,6 @@ import Search from "./pages/Search";
 import Saved from "./pages/Saved";
 import Nav from "./components/Nav";
 
-console.log(process.env.REACT_APP_API_KEY);
-
 class App extends Component {
   render() {
     return (

@@ -10,6 +10,7 @@ module.exports = function (app) {
         db.Book.find().then(
             (booksData) => {
                 res.json(booksData);
+                console.log(booksData)
             }
         ).catch(
             (err) => {
@@ -36,6 +37,7 @@ module.exports = function (app) {
 
     app.post("/api/books", (req, res) => {
         db.Book.create(req.body).then(
+            console.log(req.body),
             (response) => {
                 res.json({ successful: response });
             }

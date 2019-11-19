@@ -1,27 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import "./style.css";
 
 function Nav() {
     return (
-      <nav className="p-0">
-        <div className="container">
-          <div className="row">
-            <p className=" my-2">powered by Google Books</p>
-          </div>
-          <div className="row">
-            <h1 className="my-5">Book Search</h1>
-          </div>
-          <div className="row">
-            <Link className="btn-nav mt-3 mb-3 text-center" to="/">
-              Search
-            </Link>
-            <Link className="btn-nav mt-3 ml-3 mb-3 text-center" to="/saved">
-              Saved
-            </Link>
-          </div>
-          <div className="row"></div>
-        </div>
-      </nav>
+        <nav className="nav nav-dark bg-dark justify-content-end" >
+            <a className="nav-link text-white" href="/">
+                Search for Books
+            </a>
+            <a className="nav-link text-white" href="/saved">
+                Saved Books
+            </a>
+        </nav >
     );
 }
 
